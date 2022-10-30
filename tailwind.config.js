@@ -1,10 +1,14 @@
 module.exports = {
   theme: {
+    linearGradientColors: theme => theme('colors'),
     screens: {
       xs: { max: '425px' },
       sm: { max: '600px' },
     },
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       spacing: {
         screen: '100vw',
         full: '100%',
@@ -159,10 +163,11 @@ module.exports = {
     placeholderOpacity: false,
     textOpacity: false,
   },
+
   plugins: [
     require('tailwindcss-mso'),
     require('tailwindcss-box-shadow'),
     require('tailwindcss-email-variants'),
-    requier('tailwindcss-gradients')
+    require('tailwindcss-gradients'),
   ],
 }

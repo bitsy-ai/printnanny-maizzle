@@ -11,6 +11,7 @@
 
 module.exports = {
   build: {
+    fail: 'verbose',
     templates: {
       source: 'src/templates',
       destination: {

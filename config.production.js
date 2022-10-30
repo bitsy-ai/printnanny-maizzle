@@ -11,6 +11,8 @@
 
 module.exports = {
   build: {
+    fail: 'verbose',
+
     templates: {
       destination: {
         path: 'build_production',
@@ -18,5 +20,8 @@ module.exports = {
     },
   },
   inlineCSS: true,
-  removeUnusedCSS: true,
+  attributeToStyle: true,
+  prettify: true,
+
+  // removeUnusedCSS: true,
 }
