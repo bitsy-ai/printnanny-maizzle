@@ -1,8 +1,8 @@
 module.exports = {
   theme: {
     screens: {
-      xs: {max: '425px'},
-      sm: {max: '600px'},
+      xs: { max: '425px' },
+      sm: { max: '600px' },
     },
     extend: {
       spacing: {
@@ -163,5 +163,6 @@ module.exports = {
     require('tailwindcss-mso'),
     require('tailwindcss-box-shadow'),
     require('tailwindcss-email-variants'),
+    requier('tailwindcss-gradients')
   ],
 }
