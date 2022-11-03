@@ -20,7 +20,7 @@
   </style>
   <![endif]-->
 
-  <title>The Website Weekly Newsletter</title>
+  <title>PrintNanny</title>
   <style>
     /* Tailwind CSS components */
     /**
@@ -32,9 +32,6 @@
     .absolute {
       position: absolute !important;
     }
-    .col-span-3 {
-      grid-column: span 3 / span 3 !important;
-    }
     .my-4 {
       margin-top: 16px !important;
       margin-bottom: 16px !important;
@@ -45,14 +42,20 @@
     .table {
       display: table !important;
     }
-    .grid {
-      display: grid !important;
+    .hidden {
+      display: none !important;
+    }
+    .h-px {
+      height: 1px !important;
     }
     .cursor-default {
       cursor: default !important;
     }
-    .grid-cols-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    .bg-indigo-800 {
+      background-color: #3730a3 !important;
+    }
+    .bg-slate-300 {
+      background-color: #cbd5e1 !important;
     }
     .bg-indigo-700 {
       background-color: #4338ca !important;
@@ -60,30 +63,18 @@
     .bg-slate-200 {
       background-color: #e2e8f0 !important;
     }
-    .bg-indigo-500 {
-      background-color: #6366f1 !important;
+    .bg-cover {
+      background-size: cover !important;
     }
-    .bg-orange-400 {
-      background-color: #fb923c !important;
+    .bg-top {
+      background-position: top !important;
     }
-    .bg-gradient-to-tl {
-      background-image: linear-gradient(to top left, var(--tw-gradient-stops)) !important;
+    .bg-no-repeat {
+      background-repeat: no-repeat !important;
     }
-    .from-purple-700 {
-      --tw-gradient-from: #7e22ce !important;
-      --tw-gradient-to: rgb(126 34 206 / 0) !important;
-      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
-    }
-    .from-orange-400 {
-      --tw-gradient-from: #fb923c !important;
-      --tw-gradient-to: rgb(251 146 60 / 0) !important;
-      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
-    }
-    .to-indigo-500 {
-      --tw-gradient-to: #6366f1 !important;
-    }
-    .to-rose-400 {
-      --tw-gradient-to: #fb7185 !important;
+    .py-6 {
+      padding-top: 24px !important;
+      padding-bottom: 24px !important;
     }
     .py-3_5 {
       padding-top: 14px !important;
@@ -101,23 +92,23 @@
       padding-top: 32px !important;
       padding-bottom: 32px !important;
     }
+    .text-xl {
+      font-size: 20px !important;
+    }
     .text-xs {
       font-size: 12px !important;
     }
     .italic {
       font-style: italic !important;
     }
-    .leading-8 {
-      line-height: 32px !important;
+    .leading-px {
+      line-height: 1px !important;
     }
     .text-black {
       color: #000 !important;
     }
     .mso-text-raise-7 {
       mso-text-raise: 28px;
-    }
-    .shadow-lg {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
     }
     /* Your custom utility classes */
     /*
@@ -201,12 +192,7 @@
 
 </head>
 <body style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; background-color: #f8fafc; padding: 0">
-
-  <div style="display: none">
-    👀 Lorem, ipsum, and much dolor in this week's edition
-    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
-  </div>
-  <div role="article" aria-roledescription="email" aria-label="The Website Weekly Newsletter" lang="en">
+  <div role="article" aria-roledescription="email" aria-label="PrintNanny" lang="en">
 
     <table style="width: 100%; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
@@ -215,15 +201,15 @@
             <tr>
               <td class="sm-py-8 sm-px-6" style="padding: 48px; text-align: center">
                 <a href="https://printnanny.ai">
-                  <img src="images/logo-rect-light.png" width="250" alt="PrintNanny.ai" style="border: 0; max-width: 100%; vertical-align: middle">
+                  <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-light.png" width="250" alt="PrintNanny.ai" style="border: 0; max-width: 100%; vertical-align: middle">
                 </a>
               </td>
             </tr>
             <tr>
-              <td style="background-image: url('images/printnanny-cam-rect.png'); border-radius: 4px; background-size: cover; background-position: top; background-repeat: no-repeat; text-align: left">
+              <td style="border-radius: 4px; background-color: #6366f1; background-image: linear-gradient(to top left, var(--tw-gradient-stops)); --tw-gradient-from: #7e22ce; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); --tw-gradient-to: #6366f1; text-align: left">
                 <!--[if mso]>
 <v:rect stroke="false" style="width: 600px" xmlns:v="urn:schemas-microsoft-com:vml">
-<v:fill type="frame" src="images/printnanny-cam-rect.png" />
+<v:fill type="frame" src="undefined" />
 <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true"><div><![endif]-->
 
                 <div class="sm-h-8" role="separator" style="line-height: 64px">&zwnj;</div>
@@ -232,24 +218,33 @@
                     <td class="sm-w-6" style="width: 48px"></td>
                     <td>
                       <h1 class="sm-text-3xl sm-leading-10" style="margin: 0; margin-bottom: 16px; font-size: 36px; color: #fff">
-                        You're invited
+                        You're invited to become a <br>✨ <strong>Founding Member</strong> ✨
+                      </h1>
+                      <h1 class="sm-text-2xl sm-leading-10" style="margin: 0; margin-bottom: 16px; font-size: 24px; color: #fff">
+                        Tired of babysitting your 3D printer?
                       </h1>
                       <p style="margin: 0; font-size: 18px; line-height: 24px; color: #fff">
-                        Consectetur esse cupidatat in aliqua pariatur anim pariatur dolor nisi. Adipisicing elit
-                        labore nisi ullamco qui sint cillum commodo nisi velit sunt dolore.
+                        Get early access to PrintNanny at a discounted price.<br> 10 spots are available in the
+                        November
+                        batch.
+
                       </p>
-                      <div class="sm-h-8" role="separator" style="line-height: 64px">&zwnj;</div>
+                      <div class="sm-h-8" role="separator" style="line-height: 32px">&zwnj;</div>
                       <div style="line-height: 100%">
-                        <a href="https://example.com" class="hover-bg-indigo-700" style="text-decoration: none; display: inline-block; border-radius: 4px; background-color: #3730a3; padding-top: 16px; padding-bottom: 16px; padding-left: 24px; padding-right: 24px; text-align: center; font-size: 16px; font-weight: 600; color: #fff">
+                        <a href="https://printnanny.ai/shop/founding-membership" class="hover-from-orange-300 hover-to-rose-500" style="text-decoration: none; display: inline-block; border-radius: 4px; background-color: #fb923c; background-image: linear-gradient(to top left, var(--tw-gradient-stops)); --tw-gradient-from: #fb923c; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); --tw-gradient-to: #fb7185; padding-top: 16px; padding-bottom: 16px; padding-left: 24px; padding-right: 24px; text-align: center; font-size: 16px; font-weight: 600; color: #fff; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)">
                           <!--[if mso]>
                               <i class="-mso-font-width-full" style="mso-text-raise: 30px; letter-spacing: 24px">&#8202;</i>
                             <![endif]-->
-                          <span style="mso-text-raise: 16px">Read more &rarr;</span>
+                          <span style="mso-text-raise: 16px">Reserve My Spot &rarr;</span>
                           <!--[if mso]>
                               <i class="-mso-font-width-full" style="letter-spacing: 24px">&#8202;</i>
                             <![endif]-->
                         </a>
                       </div>
+
+                      <p style="font-size: 14px; color: #fff">
+                        If you miss the November batch, more memberships will unlock in December.
+                      </p>
                     </td>
                     <td class="sm-w-6" style="width: 48px"></td>
                   </tr>
@@ -272,19 +267,35 @@
                         <tr>
                           <td style="border-radius: 4px; background-color: #fff; padding: 24px; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
                             <p style="margin: 0; margin-bottom: 4px; font-size: 14px; color: #64748b">
-                              2 Feb, 2020
+                              👋 Hi, my name is Leigh.
                             </p>
-                            <h2 style="margin: 0; margin-bottom: 24px; font-size: 24px; line-height: 24px">
-                              Sit aliqua reprehenderit qui veniam culpa.
+                            <h2 style="margin: 0; margin-bottom: 24px; font-size: 24px; line-height: 24px; color: #334155">
+                              I created PrintNanny OS to automate the boring parts of 3D printing.
                             </h2>
-                            <p style="margin: 0; margin-bottom: 24px; font-size: 16px; color: #334155">
-                              Ex consequat deserunt id cupidatat exercitation irure commodo. Dolor et est irure elit
-                              cupidatat laborum veniam amet eiusmod Lorem ex ea do aliqua. Ipsum Lorem nulla sit aliqua
-                              quis veniam magna...
-                            </p>
-                            <a href="https://example.com" class="hover-text-indigo-500" style="text-decoration: none; font-size: 16px; color: #4338ca">
-                              Read more &rarr;
-                            </a>
+                            <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr))">
+                              <p style="grid-column: span 3 / span 3; margin: 0; margin-bottom: 24px; font-size: 16px; color: #334155">
+                                You're receiving this email because you requested access to <a href="https://printnanny.ai/">PrintNanny.ai</a>
+                                <br>
+                                <br>
+                                I'd like to invite you become a Founding Member. Would you like to learn more?
+                                <br>
+                                <br>
+                                <a href="https://printnanny.ai/docs/faq/founding-membership/" class="hover-from-orange-300 hover-to-rose-500" style="text-decoration: none; display: inline-block; border-radius: 4px; background-color: #fb923c; background-image: linear-gradient(to top left, var(--tw-gradient-stops)); --tw-gradient-from: #fb923c; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); --tw-gradient-to: #fb7185; padding-top: 16px; padding-bottom: 16px; padding-left: 24px; padding-right: 24px; text-align: center; font-size: 16px; font-weight: 600; color: #fff; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)">
+                                  <!--[if mso]>
+                                    <i class="-mso-font-width-full" style="mso-text-raise: 30px; letter-spacing: 24px">&#8202;</i>
+                                  <![endif]-->
+                                  <span style="mso-text-raise: 16px">Founding Member FAQ &rarr;</span>
+                                  <!--[if mso]>
+                                    <i class="-mso-font-width-full" style="letter-spacing: 24px">&#8202;</i>
+                                  <![endif]-->
+                                </a>
+
+                                <br>
+                                <br>
+                                Hit reply or email leigh@printnanny.ai if you have any questions.
+                              </p>
+                              <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/LeighJohnson_TensorFlow.jpg" width="150" style="border-radius: 4px" alt="">
+                            </div>
                           </td>
                         </tr>
                       </table>
@@ -295,6 +306,9 @@
             </tr>
             <tr>
               <td class="sm-px-0" style="width: 100%; padding-left: 24px; padding-right: 24px; text-align: left">
+                <h1 class="sm-text-3xl sm-leading-10" style="margin: 0; margin-bottom: 16px; text-align: center; font-size: 36px; color: #334155">
+                  Release History
+                </h1>
                 <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
                   <tr>
                     <td class="sm-px-0 sm-pb-8 sm-w-full sm-inline-block" style="width: 50%; padding-right: 16px; vertical-align: top" valign="top">
@@ -302,16 +316,17 @@
                         <tr>
                           <td style="border-radius: 4px; background-color: #fff; padding: 24px; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
                             <p style="margin: 0; margin-bottom: 4px; font-size: 14px; color: #64748b">
-                              3 Feb, 2020
+                              27 Oct, 2022
                             </p>
-                            <h2 style="margin: 0; margin-bottom: 24px; font-size: 24px; line-height: 24px">
-                              Do ullamco reprehenderit ut dolor.
+                            <h2 style="margin: 0; margin-bottom: 24px; font-size: 24px; line-height: 24px; color: #64748b">
+                              v0.4.0
                             </h2>
                             <p style="margin: 0; margin-bottom: 24px; font-size: 16px; color: #334155">
-                              Consectetur veniam ipsum ea sit est do voluptate laboris...
+                              Mainsail and Syncthing GA. PrintNanny monitoring works without an internet
+                              connection.
                             </p>
-                            <a href="https://example.com" class="hover-text-indigo-500" style="text-decoration: none; font-size: 16px; color: #4338ca">
-                              Read more &rarr;
+                            <a href="https://printnanny.ai/docs/release-history/0.4.x-dunite-langdale/" class="hover-text-indigo-500" style="text-decoration: none; font-size: 16px; color: #4338ca">
+                              Release Notes &rarr;
                             </a>
                           </td>
                         </tr>
@@ -322,16 +337,16 @@
                         <tr>
                           <td style="border-radius: 4px; background-color: #fff; padding: 24px; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
                             <p style="margin: 0; margin-bottom: 4px; font-size: 14px; color: #64748b">
-                              4 Feb, 2020
+                              28 Aug, 2022
                             </p>
-                            <h2 style="margin: 0; margin-bottom: 24px; font-size: 24px; line-height: 24px">
-                              Sunt in do sunt officia nisi enim qui eiusmod.
+                            <h2 style="margin: 0; margin-bottom: 24px; font-size: 24px; line-height: 24px; color: #64748b">
+                              v0.3.0
                             </h2>
                             <p style="margin: 0; margin-bottom: 24px; font-size: 16px; color: #334155">
-                              Nulla officia mollit ipsum eiusmod excepteur ea...
+                              PrintNanny remote control/camera works on cellular networks.
                             </p>
-                            <a href="https://example.com" class="hover-text-indigo-500" style="text-decoration: none; font-size: 16px; color: #4338ca">
-                              Read more &rarr;
+                            <a href="https://printnanny.ai/docs/release-history/0.3.x-cinnabar-kirkstone/" class="hover-text-indigo-500" style="text-decoration: none; font-size: 16px; color: #4338ca">
+                              Release Notes &rarr;
                             </a>
                           </td>
                         </tr>
@@ -347,39 +362,32 @@
             <tr>
               <td class="sm-px-6" style="padding-left: 48px; padding-right: 48px; text-align: left">
                 <h3 style="margin: 0; font-size: 16px; font-weight: 600; text-transform: uppercase; color: #475569">
-                  From the archives
+                  Community
                 </h3>
                 <div role="separator" style="line-height: 24px">&zwnj;</div>
                 <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
                   <tr>
                     <td>
-                      <h4 style="margin: 0; margin-bottom: 4px; font-size: 20px; font-weight: 600">
-                        <a href="https://example.com" class="hover-text-indigo-500" style="text-decoration: none; color: #4338ca">
-                          Lorem velit tempor qui
-                        </a>
-                      </h4>
-                      <p style="margin: 0; color: #64748b">
-                        Aliquip excepteur sint voluptate Lorem nisi deserunt consequat...
-                      </p>
-                      <table role="separator" style="width: 100%" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td style="padding-top: 24px; padding-bottom: 24px">
-                            <div style="height: 1px; background-color: #cbd5e1; line-height: 1px">&zwnj;</div>
-                          </td>
-                        </tr>
-                      </table>
+                      <a href="https://discord.gg/sf23bk2hPr" class="hover-from-orange-300 hover-to-rose-500" style="text-decoration: none; display: inline-block; border-radius: 4px; background-color: #fb923c; background-image: linear-gradient(to top left, var(--tw-gradient-stops)); --tw-gradient-from: #fb923c; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); --tw-gradient-to: #fb7185; padding-top: 16px; padding-bottom: 16px; padding-left: 24px; padding-right: 24px; text-align: center; font-size: 16px; font-weight: 600; color: #fff; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)">
+                        <!--[if mso]>
+                          <i class="-mso-font-width-full" style="mso-text-raise: 30px; letter-spacing: 24px">&#8202;</i>
+                        <![endif]-->
+                        <span style="mso-text-raise: 16px">Join Discord &rarr;</span>
+                        <!--[if mso]>
+                          <i class="-mso-font-width-full" style="letter-spacing: 24px">&#8202;</i>
+                        <![endif]-->
+                      </a>
                     </td>
-                  </tr>
-                  <tr>
                     <td>
-                      <h4 style="margin: 0; margin-bottom: 4px; font-size: 20px; font-weight: 600">
-                        <a href="https://example.com" class="hover-text-indigo-500" style="text-decoration: none; color: #4338ca">
-                          Lorem velit tempor qui
-                        </a>
-                      </h4>
-                      <p style="margin: 0; color: #64748b">
-                        Aliquip excepteur sint voluptate Lorem nisi deserunt consequat...
-                      </p>
+                      <a href="https://github.com/bitsy-ai/printnanny-os/milestones" class="hover-from-orange-300 hover-to-rose-500" style="text-decoration: none; display: inline-block; border-radius: 4px; background-color: #fb923c; background-image: linear-gradient(to top left, var(--tw-gradient-stops)); --tw-gradient-from: #fb923c; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); --tw-gradient-to: #fb7185; padding-top: 16px; padding-bottom: 16px; padding-left: 24px; padding-right: 24px; text-align: center; font-size: 16px; font-weight: 600; color: #fff; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)">
+                        <!--[if mso]>
+                          <i class="-mso-font-width-full" style="mso-text-raise: 30px; letter-spacing: 24px">&#8202;</i>
+                        <![endif]-->
+                        <span style="mso-text-raise: 16px">Roadmap & Milestones &rarr;</span>
+                        <!--[if mso]>
+                          <i class="-mso-font-width-full" style="letter-spacing: 24px">&#8202;</i>
+                        <![endif]-->
+                      </a>
                     </td>
                   </tr>
                 </table>
@@ -391,8 +399,8 @@
             <tr>
               <td class="sm-px-6" style="border-radius: 4px; background-color: #fff; padding-top: 16px; padding-bottom: 16px; padding-left: 48px; padding-right: 48px; text-align: left; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
                 <p style="margin: 0; font-size: 14px; color: #64748b">
-                  You are receiving this email because you signed up for Website Newsletter Weekly. You may
-                  <a href="https://example.com" class="hover-text-decoration-underline" style="text-decoration: none; color: #4338ca">unsubscribe</a>
+                  You are receiving this email because you signed up for PrintNanny development updates. You may
+                  <a href="%unsubscribe_url%" class="hover-text-decoration-underline" style="text-decoration: none; color: #4338ca">unsubscribe</a>
                   at any time.
                 </p>
               </td>
