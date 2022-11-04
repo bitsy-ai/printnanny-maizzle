@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
+      display: ['dark'],
       spacing: {
         screen: '100vw',
         full: '100%',
