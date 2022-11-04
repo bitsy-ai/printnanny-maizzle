@@ -51,6 +51,9 @@
     .grid {
       display: grid !important;
     }
+    .h-full {
+      height: 100% !important;
+    }
     .cursor-default {
       cursor: default !important;
     }
@@ -163,6 +166,20 @@
     }
     .hover-text-decoration-underline:hover {
       text-decoration: underline;
+    }
+    @media (prefers-color-scheme: dark) {
+      .dark-inline {
+        display: inline !important;
+      }
+      .dark-hidden {
+        display: none !important;
+      }
+      .dark-bg-zinc-700 {
+        background-color: #3f3f46 !important;
+      }
+      .dark-text-zinc-200 {
+        color: #e4e4e7 !important;
+      }
     }
     @media (max-width: 600px) {
       .sm-inline-block {

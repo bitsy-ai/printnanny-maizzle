@@ -38,9 +38,6 @@
     .table {
       display: table !important;
     }
-    .hidden {
-      display: none !important;
-    }
     .h-px {
       height: 1px !important;
     }
@@ -145,6 +142,20 @@
     .hover-text-decoration-underline:hover {
       text-decoration: underline;
     }
+    @media (prefers-color-scheme: dark) {
+      .dark-inline {
+        display: inline !important;
+      }
+      .dark-hidden {
+        display: none !important;
+      }
+      .dark-bg-zinc-700 {
+        background-color: #3f3f46 !important;
+      }
+      .dark-text-zinc-200 {
+        color: #e4e4e7 !important;
+      }
+    }
     @media (max-width: 600px) {
       .sm-inline-block {
         display: inline-block !important;
@@ -202,11 +213,12 @@
     <table style="width: 100%; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
         <td align="center" class="sm-px-4" style="background-color: #18181b">
-          <table class="sm-w-full" style="width: 600px; background-color: #f4f4f5" cellpadding="0" cellspacing="0" role="presentation">
+          <table class="sm-w-full dark-bg-zinc-700" style="width: 600px; background-color: #f4f4f5" cellpadding="0" cellspacing="0" role="presentation">
             <tr>
               <td class="sm-py-8 sm-px-6" style="padding: 48px; text-align: center">
                 <a href="https://printnanny.ai">
-                  <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-light.png" width="250" alt="PrintNanny.ai" style="border: 0; max-width: 100%; background-color: #f4f4f5; vertical-align: middle">
+                  <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-light.png" width="250" alt="PrintNanny.ai" class="dark-hidden" style="border: 0; max-width: 100%; vertical-align: middle">
+                  <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-dark.png" width="250" alt="PrintNanny.ai" class="dark-inline" style="border: 0; display: none; max-width: 100%; vertical-align: middle">
                 </a>
               </td>
             </tr>
@@ -311,7 +323,7 @@
             </tr>
             <tr>
               <td class="sm-px-0" style="width: 100%; padding-left: 24px; padding-right: 24px; text-align: center">
-                <h1 class="sm-text-3xl sm-leading-10" style="margin: 0; margin-bottom: 16px; text-align: center; font-size: 36px; color: #334155">
+                <h1 class="dark-text-zinc-200 sm-text-3xl sm-leading-10" style="margin: 0; margin-bottom: 16px; text-align: center; font-size: 36px; color: #334155">
                   Recent & Upcoming Releases
                 </h1>
                 <a href="https://printnanny.ai/docs/category/release-history/" class="hover-from-orange-300 hover-to-rose-500" style="text-decoration: none; margin-top: 16px; margin-bottom: 16px; display: inline-block; border-radius: 4px; background-color: #fb923c; background-image: linear-gradient(to top left, var(--tw-gradient-stops)); --tw-gradient-from: #fb923c; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); --tw-gradient-to: #fb7185; padding-top: 16px; padding-bottom: 16px; padding-left: 24px; padding-right: 24px; text-align: center; font-size: 16px; font-weight: 600; color: #fff; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)">
@@ -337,7 +349,7 @@
                               v0.5.0
                             </h2>
                             <p style="margin: 0; margin-bottom: 24px; font-size: 16px; color: #334155">
-                              Magic login links, configurable mDNS preferences, and other excellent requests from Founding Members.
+                              Magic login links, configurable mDNS preferences, and more.
                             </p>
                             <a href="https://github.com/bitsy-ai/printnanny-os/milestone/5" class="hover-text-indigo-500" style="text-decoration: none; font-size: 16px; color: #4338ca">
                               What's Coming? &rarr;
@@ -346,7 +358,7 @@
                         </tr>
                       </table>
                     </td>
-                    <td class="sm-px-0 sm-w-full sm-inline-block" style="width: 50%; padding-left: 16px; vertical-align: top" valign="top">
+                    <td class="sm-px-0 sm-w-full sm-inline-block" style="height: 100%; width: 50%; padding-left: 16px; vertical-align: top" valign="top">
                       <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
                         <tr>
                           <td style="border-radius: 4px; background-color: #fff; padding: 24px; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
@@ -357,7 +369,7 @@
                               v0.4.2
                             </h2>
                             <p style="margin: 0; margin-bottom: 24px; font-size: 16px; color: #334155">
-                              Mainsail & Syncthing GA. PrintNanny monitoring 100% offline. And so much more!
+                              Mainsail & Syncthing GA. PrintNanny monitoring 100% offline.
                             </p>
                             <a href="https://printnanny.ai/docs/release-history/0.4.x-dunite-langdale/" class="hover-text-indigo-500" style="text-decoration: none; font-size: 16px; color: #4338ca">
                               Read the Release Notes &rarr;
@@ -375,7 +387,7 @@
             </tr>
             <tr>
               <td class="sm-px-6" style="padding-left: 48px; padding-right: 48px; text-align: left">
-                <h3 style="margin: 0; font-size: 16px; font-weight: 600; text-transform: uppercase; color: #475569">
+                <h3 class="dark-text-zinc-200" style="margin: 0; font-size: 16px; font-weight: 600; text-transform: uppercase; color: #475569">
                   Community
                 </h3>
                 <div role="separator" style="line-height: 24px">&zwnj;</div>
