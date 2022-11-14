@@ -1,0 +1,89 @@
+---
+title: "Temporary login code"
+bodyClass: bg-zinc-50
+preHeader: "Please use this temporary login code to connect your PrintNanny account"
+---
+
+
+<extends src="src/layouts/main.html">
+    <block name="template">
+        <table class="w-full font-sans">
+            <tr>
+                <td align="center" class="bg-slate-50">
+                    <table class="w-150 sm:w-full">
+                        <tr>
+                            <td class="p-12 sm:py-8 sm:px-6 text-center">
+                                <a href="https://printnanny.ai">
+                                    <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-light.png"
+                                        width="250" alt="PrintNanny.ai"
+                                        class="max-w-full align-middle [border:0] dark:hidden">
+                                    <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-dark.png"
+                                        width="250" alt="PrintNanny.ai"
+                                        class="max-w-full align-middle [border:0] hidden dark:inline">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="sm:px-6">
+                                <table class="w-full">
+                                    <tr>
+                                        <td
+                                            class="p-12 sm:px-6 bg-white text-slate-700 text-base text-left leading-6 rounded shadow-sm">
+                                            <p>
+                                                Hello,
+                                            </p>
+                                            <p class="text-2xl sm:leading-8 text-black font-semibold m-0 mb-6">
+                                                Please use this temporary login code to connect your PrintNanny account.
+                                            </p>
+                                            <div class="leading-full">
+                                                <div href="https://example.com"
+                                                    class="inline-block py-3.5 px-4 rounded text-base font-semibold text-center [text-decoration:none] text-white bg-indigo-700 hover:bg-indigo-500">
+                                                    {{ callback_token }}
+                                                </div>
+                                            </div>
+                                            <table class="w-full" role="separator">
+                                                <tr>
+                                                    <td class="py-8">
+                                                        <div class="bg-slate-200 h-px leading-px">&zwnj;</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="m-0 mb-4">
+                                                If you didn't sign up for PrintNanny, you can safely ignore this email.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr role="separator">
+                                        <td class="h-12"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center text-slate-600 text-xs px-6">
+                                            <p class="m-0 mb-4 uppercase">
+                                                <a href="http://printnanny.ai/"
+                                                    class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">
+                                                    PrintNanny.ai</a>
+                                            </p>
+                                            <p class="m-0 italic">
+                                                The personal assistant for 3D printers.
+                                            </p>
+                                            <p class="cursor-default">
+                                                <a href="https://printnanny.ai/docs/"
+                                                    class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">Docs</a>
+                                                &bull;
+                                                <a href="https://github.com/bitsy-ai/printnanny-os"
+                                                    class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">Github</a>
+                                                &bull;
+                                                <a href="https://twitter.com/printnanny"
+                                                    class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">Twitter</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </block>
+</extends>
