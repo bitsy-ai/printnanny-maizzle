@@ -33,13 +33,18 @@ preHeader: "Please use this temporary login code to connect your PrintNanny acco
                                                 Hello,
                                             </p>
                                             <p class="text-2xl sm:leading-8 text-black font-semibold m-0 mb-6">
-                                                Please use this temporary login code to connect your PrintNanny account.
+                                                Please use this temporary code to login or connect your PrintNanny
+                                                account:
+                                            </p>
+                                            <p class="text-2xl sm:leading-8 text-black font-semibold m-0 mb-6">
+                                                {{ callback_token }}
                                             </p>
                                             <div class="leading-full">
-                                                <div href="https://example.com"
-                                                    class="inline-block py-3.5 px-4 rounded text-base font-semibold text-center [text-decoration:none] text-white bg-indigo-700 hover:bg-indigo-500">
-                                                    {{ callback_token }}
-                                                </div>
+                                                <a href="https://printnanny.ai/login/confirm/{{ email }}/{{ token }}/"
+                                                    class="inline-block py-3.5 px-4 rounded text-base font-semibold text-center [text-decoration:none] text-white bg-indigo-600 hover:bg-indigo:700">
+                                                    Log into PrintNanny Cloud →
+                                                </a>
+                                            </div>
                                             </div>
                                             <table class="w-full" role="separator">
                                                 <tr>
