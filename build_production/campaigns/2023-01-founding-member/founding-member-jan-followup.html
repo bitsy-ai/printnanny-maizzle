@@ -50,6 +50,11 @@
     .grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
     }
+    .space-y-1 > :not([hidden]) ~ :not([hidden]) {
+      --tw-space-y-reverse: 0 !important;
+      margin-top: calc(4px * calc(1 - var(--tw-space-y-reverse))) !important;
+      margin-bottom: calc(4px * var(--tw-space-y-reverse)) !important;
+    }
     .bg-slate-50 {
       background-color: #f8fafc !important;
     }
@@ -123,6 +128,9 @@
     }
     .text-black {
       color: #000 !important;
+    }
+    .text-amber-400 {
+      color: #fbbf24 !important;
     }
     .mso-text-raise-7 {
       mso-text-raise: 28px;
