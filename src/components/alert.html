@@ -1,0 +1,77 @@
+<table class="w-full font-sans" role="alert">
+    <tr>
+      <td align="center" class="bg-slate-50">
+        <table class="w-150 sm:w-full">
+          <tr>
+            <td class="p-12 sm:py-8 sm:px-6 text-center">
+              <component src="src/components/logo.html"> </component>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="sm:px-6">
+              <table class="w-full">
+                <tr>
+                  <td class="p-12 sm:px-6 bg-white text-slate-700 text-base text-left leading-6 rounded shadow-sm">
+                    <p>
+                      Hello,
+                    </p>
+                    <p class="text-2xl sm:leading-8 text-black font-semibold m-0 mb-6">
+                        <slot:alertHeader>Oh no, something went wrong! [slot:alertHeader]<slot:alertHeader />
+                    </p>
+                    <p class="m-0 mb-6">
+                        <slot:alertBody>Oh no, something went wrong! [slot:alertBody] <slot:alertBody />
+                    </p>
+
+                    <slot:alertCTA></slot:alertCTA>
+                    <table class="w-full" role="separator">
+                        <tr>
+                          <td class="py-8">
+                            <div class="bg-slate-200 h-px leading-px">&zwnj;</div>
+                          </td>
+                        </tr>
+                      </table>
+                    <slot:alertImage>
+                        <div class="leading-full">
+                            <img src="@{{alertImageUrl}}" width="640" style="border: 0; max-width: 100%; vertical-align: middle">
+                        </div>
+                    </slot:alertImage>
+
+                    <table class="w-full" role="separator">
+                      <tr>
+                        <td class="py-8">
+                          <div class="bg-slate-200 h-px leading-px">&zwnj;</div>
+                        </td>
+                      </tr>
+                    </table>
+                    <p class="m-0 mb-4">
+                      If you want to stop receiving email alerts, <a href="https://printnanny.ai/settings/notifications/">click here to adjust your notification settings.</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr role="separator">
+                  <td class="h-12"></td>
+                </tr>
+                <tr>
+                  <td class="text-center text-slate-600 text-xs px-6">
+                    <p class="m-0 mb-4 uppercase">
+                      Powered by PrintNanny
+                    </p>
+                    <p class="m-0 italic">
+                      The AI assistant for your 3D printer.
+                    </p>
+                    <p class="cursor-default">
+                      <a href="https://printnanny.ai/docs/" class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">Docs</a>
+                      &bull;
+                      <a href="https://github.com/bitsy-ai/printnanny-os" class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">Github</a>
+                      &bull;
+                      <a href="https://twitter.com/printnanny" class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">Twitter</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>

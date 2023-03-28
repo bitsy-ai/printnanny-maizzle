@@ -30,180 +30,337 @@
 */
     /* Tailwind CSS utility classes */
     .absolute {
-      position: absolute !important;
+      position: absolute;
     }
     .col-span-3 {
-      grid-column: span 3 / span 3 !important;
+      grid-column: span 3 / span 3;
+    }
+    .m-0 {
+      margin: 0;
     }
     .m-2 {
-      margin: 8px !important;
+      margin: 8px;
     }
     .my-4 {
-      margin-top: 16px !important;
-      margin-bottom: 16px !important;
+      margin-top: 16px;
+      margin-bottom: 16px;
     }
     .mb-1 {
-      margin-bottom: 4px !important;
+      margin-bottom: 4px;
+    }
+    .mb-4 {
+      margin-bottom: 16px;
+    }
+    .mb-6 {
+      margin-bottom: 24px;
     }
     .mt-4 {
-      margin-top: 16px !important;
+      margin-top: 16px;
     }
     .block {
-      display: block !important;
+      display: block;
+    }
+    .inline-block {
+      display: inline-block;
     }
     .table {
-      display: table !important;
+      display: table;
     }
     .grid {
-      display: grid !important;
+      display: grid;
     }
-    .h-8 {
-      height: 32px !important;
+    .hidden {
+      display: none;
+    }
+    .h-12 {
+      height: 48px;
     }
     .h-16 {
-      height: 64px !important;
+      height: 64px;
+    }
+    .h-8 {
+      height: 32px;
     }
     .h-full {
-      height: 100% !important;
+      height: 100%;
     }
-    .w-12 {
-      width: 48px !important;
+    .h-px {
+      height: 1px;
     }
     .w-1-2 {
-      width: 50% !important;
+      width: 50%;
+    }
+    .w-12 {
+      width: 48px;
+    }
+    .w-150 {
+      width: 600px;
+    }
+    .w-full {
+      width: 100%;
+    }
+    .max-w-full {
+      max-width: 100%;
+    }
+    .cursor-default {
+      cursor: default;
     }
     .grid-cols-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     .space-y-1 > :not([hidden]) ~ :not([hidden]) {
-      --tw-space-y-reverse: 0 !important;
-      margin-top: calc(4px * calc(1 - var(--tw-space-y-reverse))) !important;
-      margin-bottom: calc(4px * var(--tw-space-y-reverse)) !important;
+      --tw-space-y-reverse: 0;
+      margin-top: calc(4px * calc(1 - var(--tw-space-y-reverse)));
+      margin-bottom: calc(4px * var(--tw-space-y-reverse));
     }
-    .bg-indigo-800 {
-      background-color: #3730a3 !important;
+    .rounded {
+      border-radius: 4px;
     }
-    .bg-slate-300 {
-      background-color: #cbd5e1 !important;
-    }
-    .bg-indigo-700 {
-      background-color: #4338ca !important;
-    }
-    .bg-zinc-800 {
-      background-color: #27272a !important;
-    }
-    .bg-zinc-900 {
-      background-color: #18181b !important;
-    }
-    .bg-zinc-100 {
-      background-color: #f4f4f5 !important;
+    .border {
+      border-width: 1px;
     }
     .bg-indigo-500 {
-      background-color: #6366f1 !important;
+      background-color: #6366f1;
+    }
+    .bg-indigo-600 {
+      background-color: #4f46e5;
+    }
+    .bg-indigo-700 {
+      background-color: #4338ca;
+    }
+    .bg-indigo-800 {
+      background-color: #3730a3;
     }
     .bg-orange-400 {
-      background-color: #fb923c !important;
+      background-color: #fb923c;
+    }
+    .bg-slate-200 {
+      background-color: #e2e8f0;
+    }
+    .bg-slate-300 {
+      background-color: #cbd5e1;
+    }
+    .bg-slate-50 {
+      background-color: #f8fafc;
+    }
+    .bg-white {
+      background-color: #fff;
+    }
+    .bg-zinc-100 {
+      background-color: #f4f4f5;
+    }
+    .bg-zinc-50 {
+      background-color: #fafafa;
     }
     .bg-zinc-700 {
-      background-color: #3f3f46 !important;
+      background-color: #3f3f46;
+    }
+    .bg-zinc-800 {
+      background-color: #27272a;
+    }
+    .bg-zinc-900 {
+      background-color: #18181b;
     }
     .bg-gradient-to-tl {
-      background-image: linear-gradient(to top left, var(--tw-gradient-stops)) !important;
-    }
-    .from-purple-700 {
-      --tw-gradient-from: #7e22ce !important;
-      --tw-gradient-to: rgb(126 34 206 / 0) !important;
-      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+      background-image: linear-gradient(to top left, var(--tw-gradient-stops));
     }
     .from-orange-400 {
-      --tw-gradient-from: #fb923c !important;
-      --tw-gradient-to: rgb(251 146 60 / 0) !important;
-      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+      --tw-gradient-from: #fb923c var(--tw-gradient-from-position);
+      --tw-gradient-from-position: ;
+      --tw-gradient-to: rgb(251 146 60 / 0) var(--tw-gradient-from-position);
+      --tw-gradient-to-position: ;
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+    .from-purple-700 {
+      --tw-gradient-from: #7e22ce var(--tw-gradient-from-position);
+      --tw-gradient-from-position: ;
+      --tw-gradient-to: rgb(126 34 206 / 0) var(--tw-gradient-from-position);
+      --tw-gradient-to-position: ;
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     }
     .to-indigo-500 {
-      --tw-gradient-to: #6366f1 !important;
+      --tw-gradient-to: #6366f1 var(--tw-gradient-to-position);
+      --tw-gradient-to-position: ;
     }
     .to-rose-400 {
-      --tw-gradient-to: #fb7185 !important;
+      --tw-gradient-to: #fb7185 var(--tw-gradient-to-position);
+      --tw-gradient-to-position: ;
     }
     .bg-cover {
-      background-size: cover !important;
+      background-size: cover;
     }
     .bg-top {
-      background-position: top !important;
+      background-position: top;
     }
     .bg-no-repeat {
-      background-repeat: no-repeat !important;
+      background-repeat: no-repeat;
+    }
+    .p-0 {
+      padding: 0;
+    }
+    .p-12 {
+      padding: 48px;
     }
     .p-6 {
-      padding: 24px !important;
-    }
-    .py-4 {
-      padding-top: 16px !important;
-      padding-bottom: 16px !important;
+      padding: 24px;
     }
     .px-12 {
-      padding-left: 48px !important;
-      padding-right: 48px !important;
+      padding-left: 48px;
+      padding-right: 48px;
     }
-    .py-6 {
-      padding-top: 24px !important;
-      padding-bottom: 24px !important;
+    .px-4 {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .px-6 {
+      padding-left: 24px;
+      padding-right: 24px;
     }
     .py-3 {
-      padding-top: 12px !important;
-      padding-bottom: 12px !important;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .py-3_5 {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    .py-4 {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    .py-6 {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    .py-8 {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
     .pb-8 {
-      padding-bottom: 32px !important;
-    }
-    .pr-4 {
-      padding-right: 16px !important;
+      padding-bottom: 32px;
     }
     .pl-4 {
-      padding-left: 16px !important;
+      padding-left: 16px;
+    }
+    .pr-4 {
+      padding-right: 16px;
+    }
+    .text-left {
+      text-align: left;
+    }
+    .text-center {
+      text-align: center;
     }
     .align-top {
-      vertical-align: top !important;
+      vertical-align: top;
+    }
+    .align-middle {
+      vertical-align: middle;
+    }
+    .font-sans {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    .text-2xl {
+      font-size: 24px;
     }
     .text-4xl {
-      font-size: 36px !important;
+      font-size: 36px;
+    }
+    .text-base {
+      font-size: 16px;
     }
     .text-lg {
-      font-size: 18px !important;
+      font-size: 18px;
     }
     .text-sm {
-      font-size: 14px !important;
+      font-size: 14px;
     }
     .text-xl {
-      font-size: 20px !important;
+      font-size: 20px;
+    }
+    .text-xs {
+      font-size: 12px;
+    }
+    .font-semibold {
+      font-weight: 600;
+    }
+    .uppercase {
+      text-transform: uppercase;
+    }
+    .italic {
+      font-style: italic;
     }
     .leading-16 {
-      line-height: 64px !important;
+      line-height: 64px;
+    }
+    .leading-6 {
+      line-height: 24px;
     }
     .leading-8 {
-      line-height: 32px !important;
+      line-height: 32px;
+    }
+    .leading-full {
+      line-height: 100%;
+    }
+    .leading-px {
+      line-height: 1px;
     }
     .tracking-6 {
-      letter-spacing: 24px !important;
-    }
-    .text-slate-500 {
-      color: #64748b !important;
+      letter-spacing: 24px;
     }
     .text-amber-400 {
-      color: #fbbf24 !important;
+      color: #fbbf24;
     }
-    .mso-text-raise-7_5 {
-      mso-text-raise: 30px;
+    .text-black {
+      color: #000;
     }
-    .mso-text-raise-7 {
-      mso-text-raise: 28px;
+    .text-indigo-700 {
+      color: #4338ca;
+    }
+    .text-slate-500 {
+      color: #64748b;
+    }
+    .text-slate-600 {
+      color: #475569;
+    }
+    .text-slate-700 {
+      color: #334155;
+    }
+    .text-white {
+      color: #fff;
     }
     .mso-text-raise-4 {
       mso-text-raise: 16px;
     }
+    .mso-text-raise-7 {
+      mso-text-raise: 28px;
+    }
+    .mso-text-raise-7_5 {
+      mso-text-raise: 30px;
+    }
     .shadow-lg {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    }
+    .shadow-sm {
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    .-webkit-font-smoothing-antialiased {
+      -webkit-font-smoothing: antialiased;
+    }
+    .border-0 {
+      border: 0;
+    }
+    .slot-alertBody {
+      slot: alertBody;
+    }
+    .slot-alertHeader {
+      slot: alertHeader;
+    }
+    .text-decoration-none {
+      text-decoration: none;
+    }
+    .word-break-break-word {
+      word-break: break-word;
     }
     /* Your custom utility classes */
     /*
@@ -218,25 +375,28 @@
     :root {
       color-scheme: light dark;
     }
-    .hover-bg-indigo-700:hover {
-      background-color: #4338ca !important;
-    }
     .hover-bg-indigo-500:hover {
       background-color: #6366f1 !important;
     }
+    .hover-bg-indigo-700:hover {
+      background-color: #4338ca !important;
+    }
     .hover-from-orange-300:hover {
-      --tw-gradient-from: #fdba74 !important;
-      --tw-gradient-to: rgb(253 186 116 / 0) !important;
+      --tw-gradient-from: #fdba74 var(--tw-gradient-from-position) !important;
+      --tw-gradient-from-position: !important;
+      --tw-gradient-to: rgb(253 186 116 / 0) var(--tw-gradient-from-position) !important;
+      --tw-gradient-to-position: !important;
       --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
     }
     .hover-to-rose-500:hover {
-      --tw-gradient-to: #f43f5e !important;
+      --tw-gradient-to: #f43f5e var(--tw-gradient-to-position) !important;
+      --tw-gradient-to-position: !important;
     }
     .hover-text-indigo-500:hover {
       color: #6366f1 !important;
     }
     .hover-text-decoration-underline:hover {
-      text-decoration: underline;
+      text-decoration: underline !important;
     }
     @media (prefers-color-scheme: dark) {
       .dark-inline {
@@ -259,39 +419,39 @@
       .sm-h-8 {
         height: 32px !important;
       }
-      .sm-w-full {
-        width: 100% !important;
-      }
       .sm-w-6 {
         width: 24px !important;
       }
+      .sm-w-full {
+        width: 100% !important;
+      }
       .sm-grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-      }
-      .sm-px-4 {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
-      }
-      .sm-py-8 {
-        padding-top: 32px !important;
-        padding-bottom: 32px !important;
-      }
-      .sm-px-6 {
-        padding-left: 24px !important;
-        padding-right: 24px !important;
       }
       .sm-px-0 {
         padding-left: 0 !important;
         padding-right: 0 !important;
       }
+      .sm-px-4 {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+      .sm-px-6 {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+      }
+      .sm-py-8 {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+      }
       .sm-pb-8 {
         padding-bottom: 32px !important;
       }
-      .sm-text-3xl {
-        font-size: 30px !important;
-      }
       .sm-text-2xl {
         font-size: 24px !important;
+      }
+      .sm-text-3xl {
+        font-size: 30px !important;
       }
       .sm-leading-10 {
         line-height: 40px !important;
@@ -303,72 +463,72 @@
   </style>
 
 </head>
-<body style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; background-color: #fafafa; padding: 0">
+<body class="m-0 p-0 w-full word-break-break-word -webkit-font-smoothing-antialiased bg-zinc-50" style="margin: 0; width: 100%; background-color: #fafafa; padding: 0; -webkit-font-smoothing: antialiased; word-break: break-word;">
   <div role="article" aria-roledescription="email" aria-label="Temporary login code" lang="en">
 
-    <table style="width: 100%; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
+    <table class="w-full font-sans" style="width: 100%; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
-        <td align="center" style="background-color: #f8fafc">
-          <table class="sm-w-full" style="width: 600px" cellpadding="0" cellspacing="0" role="presentation">
+        <td align="center" class="bg-slate-50" style="background-color: #f8fafc;">
+          <table class="w-150 sm-w-full" style="width: 600px;" cellpadding="0" cellspacing="0" role="presentation">
             <tr>
-              <td class="sm-py-8 sm-px-6" style="padding: 48px; text-align: center">
+              <td class="p-12 sm-py-8 sm-px-6 text-center" style="padding: 48px; text-align: center;">
                 <a href="https://printnanny.ai">
-                  <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-light.png" width="250" alt="PrintNanny.ai" class="dark-hidden" style="border: 0; max-width: 100%; vertical-align: middle">
-                  <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-dark.png" width="250" alt="PrintNanny.ai" class="dark-inline" style="border: 0; display: none; max-width: 100%; vertical-align: middle">
+                  <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-light.png" width="250" alt="PrintNanny.ai" class="max-w-full align-middle border-0 dark-hidden" style="max-width: 100%; vertical-align: middle; border: 0;">
+                  <img src="https://cdn.printnanny.ai/mail/founding-member-offer-1-nov-2022/logo-rect-dark.png" width="250" alt="PrintNanny.ai" class="max-w-full align-middle border-0 hidden dark-inline" style="display: none; max-width: 100%; vertical-align: middle; border: 0;">
                 </a>
               </td>
             </tr>
             <tr>
               <td align="center" class="sm-px-6">
-                <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                <table class="w-full" style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                   <tr>
-                    <td class="sm-px-6" style="border-radius: 4px; background-color: #fff; padding: 48px; text-align: left; font-size: 16px; line-height: 24px; color: #334155; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
+                    <td class="p-12 sm-px-6 bg-white text-slate-700 text-base text-left leading-6 rounded shadow-sm" style="border-radius: 4px; background-color: #fff; padding: 48px; text-align: left; font-size: 16px; line-height: 24px; color: #334155; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);">
                       <p>
                         Hello,
                       </p>
-                      <p class="sm-leading-8" style="margin: 0; margin-bottom: 24px; font-size: 24px; font-weight: 600; color: #000">
+                      <p class="text-2xl sm-leading-8 text-black font-semibold m-0 mb-6" style="margin: 0; margin-bottom: 24px; font-size: 24px; font-weight: 600; color: #000;">
                         Please use this temporary code to login or connect your PrintNanny
                         account:
                       </p>
-                      <p id="token" class="sm-leading-8" style="margin: 0; margin-bottom: 24px; font-size: 24px; font-weight: 600; color: #000">
-                        undefined
+                      <p id="token" class="text-2xl sm-leading-8 text-black font-semibold m-0 mb-6" style="margin: 0; margin-bottom: 24px; font-size: 24px; font-weight: 600; color: #000;">
+                        {{ callback_token }}
                       </p>
-                      <div style="line-height: 100%">
-                        <a href="https://printnanny.ai/login/confirm/undefined/undefined/" class="hover-bg-indigo-700" style="text-decoration: none; display: inline-block; border-radius: 4px; background-color: #4f46e5; padding-top: 14px; padding-bottom: 14px; padding-left: 16px; padding-right: 16px; text-align: center; font-size: 16px; font-weight: 600; color: #fff">
+                      <div class="leading-full" style="line-height: 100%;">
+                        <a href="https://printnanny.ai/login/confirm/{{ email }}/{{ token }}/" class="inline-block py-3_5 px-4 rounded text-base font-semibold text-center text-decoration-none text-white bg-indigo-600 hover-bg-indigo-700" style="display: inline-block; border-radius: 4px; background-color: #4f46e5; padding-left: 16px; padding-right: 16px; padding-top: 14px; padding-bottom: 14px; text-align: center; font-size: 16px; font-weight: 600; color: #fff; text-decoration: none;">
                           Log into PrintNanny Cloud →
                         </a>
                       </div>
 
-                      <table role="separator" style="width: 100%" cellpadding="0" cellspacing="0">
+                      <table class="w-full" role="separator" style="width: 100%;" cellpadding="0" cellspacing="0">
                         <tr>
-                          <td style="padding-top: 32px; padding-bottom: 32px">
-                            <div style="height: 1px; background-color: #e2e8f0; line-height: 1px">&zwnj;</div>
+                          <td class="py-8" style="padding-top: 32px; padding-bottom: 32px;">
+                            <div class="bg-slate-200 h-px leading-px" style="height: 1px; background-color: #e2e8f0; line-height: 1px;">&zwnj;</div>
                           </td>
                         </tr>
                       </table>
-                      <p style="margin: 0; margin-bottom: 16px">
+                      <p class="m-0 mb-4" style="margin: 0; margin-bottom: 16px;">
                         If you didn't sign up for PrintNanny, you can safely ignore this email.
                       </p>
                     </td>
                   </tr>
                   <tr role="separator">
-                    <td style="height: 48px"></td>
+                    <td class="h-12" style="height: 48px;"></td>
                   </tr>
                   <tr>
-                    <td style="padding-left: 24px; padding-right: 24px; text-align: center; font-size: 12px; color: #475569">
-                      <p style="margin: 0; margin-bottom: 16px; text-transform: uppercase">
-                        <a href="http://printnanny.ai/" class="hover-text-decoration-underline" style="text-decoration: none; color: #4338ca">
+                    <td class="text-center text-slate-600 text-xs px-6" style="padding-left: 24px; padding-right: 24px; text-align: center; font-size: 12px; color: #475569;">
+                      <p class="m-0 mb-4 uppercase" style="margin: 0; margin-bottom: 16px; text-transform: uppercase;">
+                        <a href="http://printnanny.ai/" class="text-indigo-700 text-decoration-none hover-text-decoration-underline" style="color: #4338ca; text-decoration: none;">
                           PrintNanny.ai</a>
                       </p>
-                      <p style="margin: 0; font-style: italic">
+                      <p class="m-0 italic" style="margin: 0; font-style: italic;">
                         The personal assistant for 3D printers.
                       </p>
-                      <p style="cursor: default">
-                        <a href="https://printnanny.ai/docs/" class="hover-text-decoration-underline" style="text-decoration: none; color: #4338ca">Docs</a>
+                      <p class="cursor-default" style="cursor: default;">
+                        <a href="https://printnanny.ai/docs/" class="text-indigo-700 text-decoration-none hover-text-decoration-underline" style="color: #4338ca; text-decoration: none;">Docs</a>
                         &bull;
-                        <a href="https://github.com/bitsy-ai/printnanny-os" class="hover-text-decoration-underline" style="text-decoration: none; color: #4338ca">Github</a>
+                        <a href="https://github.com/bitsy-ai/printnanny-os" class="text-indigo-700 text-decoration-none hover-text-decoration-underline" style="color: #4338ca; text-decoration: none;">Github</a>
                         &bull;
-                        <a href="https://twitter.com/printnanny" class="hover-text-decoration-underline" style="text-decoration: none; color: #4338ca">Twitter</a>
+                        <a href="https://twitter.com/printnanny" class="text-indigo-700 text-decoration-none hover-text-decoration-underline" style="color: #4338ca; text-decoration: none;">Twitter</a>
                       </p>
                     </td>
                   </tr>

@@ -37,10 +37,10 @@ preHeader: "Please use this temporary login code to connect your PrintNanny acco
                                                 account:
                                             </p>
                                             <p id="token" class="text-2xl sm:leading-8 text-black font-semibold m-0 mb-6">
-                                                {{ callback_token }}
+                                                @{{ callback_token }}
                                             </p>
                                             <div class="leading-full">
-                                                <a href="https://printnanny.ai/login/confirm/{{ email }}/{{ token }}/"
+                                                <a href="https://printnanny.ai/login/confirm/@{{ email }}/@{{ token }}/"
                                                     class="inline-block py-3.5 px-4 rounded text-base font-semibold text-center [text-decoration:none] text-white bg-indigo-600 hover:bg-indigo:700">
                                                     Log into PrintNanny Cloud →
                                                 </a>
